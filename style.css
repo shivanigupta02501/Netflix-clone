@@ -1,0 +1,444 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.main-hero-section{
+  background: url(image/netflix-background-image.jpg) no-repeat center center/cover;
+  background-color: rgba(0, 0, 0, 0.6); /* Fallback color */
+  background-blend-mode: darken;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  padding: 20px 40px;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  position: sticky; 
+}
+.logo h1 {
+  color: red;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+
+}
+.header-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.language {
+  background: #000000b3;
+  color: white;
+  border: 1px solid white;
+  padding: 6px 13px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.signout-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.signout-btn:hover {
+  background: darkred;
+}
+
+/* hero-section */
+.hero-section {
+  height: 100vh;
+  /* background: url(image/netflix-background-image.jpg) no-repeat center center/cover; */
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  /* background-color: rgba(0, 0, 0, 0.6); Fallback color; */
+  /* background-blend-mode: darken; */
+}
+.hero-section h1 {
+  font-size: 3.5rem;
+  margin:40px 0 20px 0;
+}
+.hero-section h4 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+.hero-section p {
+  font-size:1rem;
+  margin-bottom: 30px;
+}
+.hero-section .email-form {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+  margin-left: 0.2rem;
+}
+.hero-section .email-form input {
+  flex: 1;
+  padding: 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+}
+.hero-section .email-form button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.hero-section .email-form button:hover {
+  background: darkred;
+}
+.hero-content {
+  padding: 20px;
+  border-radius: 8px;
+  width:34.46rem;
+}
+
+ /* TREANDING MOVIES SECTION */
+ .trending-movies{
+    background-color: #141414;
+}
+.trending-movies h2{
+    margin: 27px 0 10px 120px;
+    font-size: 28px;
+    padding: 30px;
+}
+.movies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+.image-card img{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.image-card img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* section-reason-to-join */
+ .reason{
+    background-color: #141414;
+}
+.reason h2{
+    margin: 36px 0 10px 120px;
+    font-size: 28px;
+    padding: 30px;
+}
+.reason-to-join-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+.reason-to-join-card .card{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    background-color: #1E162A;
+    text-align: left;
+}
+.reason-to-join-card .card h3{
+   padding: 5px;
+}
+.reason-to-join-card .card p{
+   padding: 5px;
+}
+.faq{
+  position: relative;
+}
+.faq h2{
+    margin: 27px 0 10px 120px;
+    font-size: 28px;
+    padding: 30px;
+}
+.faq-card{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: #2D2D2D;
+  width:80%;
+  margin:12px auto;
+  padding: 26px;
+}
+.faq-card h3{
+  font-size: 22px;
+}
+.faq-card .icon{
+  position: absolute;
+  right: 186px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.mail{
+  position: relative;
+}
+.mail h4{
+  text-align: center;
+  padding:20px;
+  font-size: 18px;
+  margin: 40px 0 10px 0;
+}
+.mail form{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mail input{
+  width: 580px;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0F0F0F;
+  border: 1px solid #999;
+}
+.get-started-button button{
+  background: red;
+  color: white;
+  border: none;
+  padding: 12px 26px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.fa-chevron-right{
+  position: absolute;
+    margin: 14px 0 0 -25px;
+    font-size: 13px;
+}
+
+.footer{
+  margin: 36px 0 10px 120px;
+    font-size: 16px;
+    padding: 30px;
+    color:#ffffffb1;
+}
+.footer address{
+  font-style: normal;
+  margin-bottom: 20px;
+  padding:10px;
+}
+.all-information{
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.all-information .card{
+width:40%;
+}
+.all-information .card a{
+  color: #ffffffb1;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 32px;
+  text-transform: capitalize;
+}
+.footer .language{
+  margin:30px 0 20px 0 ;
+  padding:8px 12px;
+  text-transform: capitalize;
+}
+.footer .language option{
+  background-color: #fff;
+  color: #000;
+  padding:10px;
+}
+#netflix{
+  color: #ffffffb1;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+#para{
+   color: #ffffffb1;
+  font-size: 16px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  .hero-section h4 {
+    font-size: 1.1rem;
+  }
+  .hero-section p {
+    font-size: 0.9rem;
+  }
+  .hero-section .email-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-section .email-form input,
+  .hero-section .email-form button {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .trending-movies h2,.reason h2,.faq h2{
+    margin: 27px 0 10px 6px;
+    font-size: 20px;
+    padding: 20px;
+  }
+  .reason-to-join-card{
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    display: grid;
+    margin:10px;
+  }
+   .reason-to-join-card .card{
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    margin:10px 0;
+    border:1px solid #ffffff2d;
+}
+  .faq-card{
+    width: 90%;
+    margin:12px auto;
+    padding: 20px;
+  }
+  .faq-card h3{
+    font-size: 15px;
+  }
+  .faq-card .icon{
+    right: 20px;
+  }
+  .mail h4{
+    font-size: 16px;
+    margin: 20px 0 10px 0;
+  }
+  .mail input{
+    width: 90%;
+    font-size: 14px;
+    margin:0px 0 20px 0;
+    padding: 15px;
+  }
+  .footer{
+    margin: 20px 0 10px 6px;
+    font-size: 14px;
+    padding: 20px;
+  }
+  .footer address{
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding:5px;
+  }
+  .all-information{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .all-information .card{
+    width:100%;
+  }
+  .all-information a{
+    font-size: 28px;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 14px 8px;
+    align-items: flex-start;
+  }
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+  .language {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+    .signout-btn {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  .hero-section h4 {
+    font-size: 1rem;
+  }
+  .hero-section p {
+    font-size: 0.8rem;
+  }
+  .hero-content {
+    width: 90%;
+  }
+}
+@media(min-width: 1020px){
+  .reason-to-join-card{
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px 60px;
+  }
+  .reason-to-join-card .card{
+    width: 40%;
+    height: 180px;
+    font-size: 16px;
+    padding: 30px;
+    border:1px solid #ffffff23;
+  }
+}
+@media(min-width: 1200px){
+  .reason-to-join-card .card{
+    width: 20%;
+    height: 200px;
+    font-size: 16px;
+    padding: 20px;
+    border:1px solid #ffffff23;
+  }
+}
+
+   
